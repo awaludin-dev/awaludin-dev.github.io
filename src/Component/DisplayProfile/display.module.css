@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+}
+.outlineImg {
+    padding-top: 24px;
+}
+.imgStyles {
+    width: 200px;
+    border-radius: 50%;
+}
+.textDisplay {
+    color: #fff;
+}

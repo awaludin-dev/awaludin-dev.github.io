@@ -11,7 +11,15 @@ const App = () => {
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(BIRDS({
-        el: myRef.current
+        el: myRef.current,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        birdSize: 0.50
       }))
     }
     return () => {

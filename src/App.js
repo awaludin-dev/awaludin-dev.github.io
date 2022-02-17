@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BIRDS from 'vanta/dist/vanta.birds.min';
 import './App.css';
 import Footer from './Component/Footer';
-import Biodata from './Pages/Biodata';
+// import Biodata from './Pages/Biodata';
 import Home from './Pages/Home';
  
 const App = () => {
@@ -32,7 +32,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/biodata' element={<Biodata/>}/>
+          {/* <Route path='/biodata' element={<Biodata/>}/> */}
           <Route path='*' element={<Home/>}/>
         </Routes>
         <Footer/>

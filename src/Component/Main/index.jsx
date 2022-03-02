@@ -4,31 +4,27 @@ import { Link } from 'react-router-dom';
 function Main() {
     const menu = [
         {
-            name: 'Biodata',
-            link: '/biodata'
-        },{
             name: 'Instagram',
-            link: '/youtube'
+            link: 'https://www.instagram.com/aww_udin'
         },{
             name: 'Youtube',
-            link: '/youtube'
+            link: 'https://www.youtube.com/channel/UCsP7YBGy5bL0zeSQIENXB3Q'
         },{
             name: 'Tiktok',
-            link: '/tiktok'
-        },{
-            name: 'Portfolio',
-            link: '/portfolio'
+            link: '/https://www.tiktok.com/@aww.udin'
         }];
 
     return (
         <div className={styles.mainArea}>
+            <Link to='/biodata' className={styles.itemChoose}>Biodata</Link>
             {
                 menu.map((item, i) => {
                     return(
-                        <Link to={item.link} className={styles.itemChoose} key={i}>{item.name}</Link>
+                        <a href={item.link} className={styles.itemChoose} target="_blank" key={i} rel="noreferrer">{item.name}</a>
                     )
                 }) 
             }
+            <Link to='/portfolio' className={styles.itemChoose}>Portfolio</Link>
         </div>
     )
 }

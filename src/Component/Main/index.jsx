@@ -11,7 +11,7 @@ function Main() {
             link: 'https://www.youtube.com/channel/UCsP7YBGy5bL0zeSQIENXB3Q'
         },{
             name: 'Tiktok',
-            link: '/https://www.tiktok.com/@aww.udin'
+            link: 'https://www.tiktok.com/@aww.udin'
         }];
 
     return (

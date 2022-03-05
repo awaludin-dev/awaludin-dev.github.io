@@ -30,7 +30,7 @@ function ContactMe() {
             messageErrors = [...messageErrors, 'No HP tidak boleh kosong'];
         } else {
             const re = /^(\+62|62|0)8[1-9][0-9]{6,9}$/;
-            if(!re.test(noHp)) {
+            if(!re.test(Number(noHp))) {
                 messageErrors = [...messageErrors, 'No HP tidak  valid'];
             }
         }

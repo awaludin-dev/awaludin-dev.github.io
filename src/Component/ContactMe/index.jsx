@@ -48,7 +48,7 @@ function ContactMe() {
 
     const showErrors = (errors) => {
         return (
-            <ul style={{color: 'red', textAlign: 'left'}}>
+            <ul style={{color: 'red', textAlign: 'center', listStyle: 'none'}}>
             {
                 errors.map((error, i) => <li key={i}>{error}</li>)
             }

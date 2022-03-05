@@ -6,11 +6,14 @@
     text-decoration: none;
     display: block;
     text-align: center;
-    background-color: rgba(240, 240, 240, 0.8);
     margin: 16px 10%;
     font-size: 1.4em;
-    color: #000;
+    color: rgba(240, 240, 240, 0.8);
     padding: 1em;
     font-weight: 600;
-    border-radius: 16px;
+    border: 1px solid rgb(240, 240, 240);
+}
+.itemChoose:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+    color: unset;
 }

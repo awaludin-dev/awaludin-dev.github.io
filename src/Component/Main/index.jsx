@@ -2,8 +2,7 @@ import styles from './main.module.css';
 import { Link } from 'react-router-dom';
 
 function Main() {
-    const menu = [
-        {
+    const menu = [{
             name: 'Instagram',
             link: 'https://www.instagram.com/aww_udin'
         },{

@@ -1,0 +1,28 @@
+.form {
+    text-align: center;
+    margin: 0 16px 32px 16px;
+}
+.table {
+    margin: 24px auto;
+    text-align: left;
+}
+.fieldForm {
+    margin-bottom: 12px;
+}
+.headerForm {
+    color: #fff;
+}
+.bodyForm {
+    color: #fff;
+}
+.bodyForm td {
+    padding: 8px 16px;
+}
+.bodyForm textarea {
+    resize: none;
+    width: 166px;
+    height: 120px;
+}
+.bodyForm textarea, .bodyForm input {
+    padding: 4px 6px;
+}

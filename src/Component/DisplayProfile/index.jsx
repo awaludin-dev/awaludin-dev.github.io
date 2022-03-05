@@ -9,7 +9,7 @@ const DisplayProfile = () => {
             </div>
             <div className={styles.textDisplay}>
                 <h1>Awaludin Nasir U.</h1>
-                <h2>Web Developer</h2>
+                <h4>Web Developer</h4>
             </div>
         </div>
     )

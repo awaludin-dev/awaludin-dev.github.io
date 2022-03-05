@@ -11,12 +11,15 @@
 }
 .headerForm {
     color: #fff;
+    font-size: 1.8em;
+    padding: 0 12px;
 }
 .bodyForm {
     color: #fff;
 }
 .bodyForm td {
     padding: 8px 16px;
+    font-size: 1.2em;
 }
 .bodyForm textarea {
     resize: none;

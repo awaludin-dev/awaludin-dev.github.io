@@ -11,6 +11,9 @@ function Main() {
         },{
             name: 'Tiktok',
             link: 'https://www.tiktok.com/@aww.udin'
+        },{
+            name: 'Portofolio',
+            link: 'https://drive.google.com/file/d/1G9fLp2kQ18DlsNiLrTxwiAe700nmV1zn/view?usp=sharing'
         }];
 
     return (
@@ -23,7 +26,6 @@ function Main() {
                     )
                 }) 
             }
-            <Link to='/portfolio' className={styles.itemChoose}>Portfolio</Link>
         </div>
     )
 }

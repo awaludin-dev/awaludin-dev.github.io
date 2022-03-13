@@ -5,7 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Authors
 
-- [@awaludin-dev](https://www.github.com/awaludin-dev)
+- Instagram [@aww_udin](https://www.instagram.com/aww_udin)
+- Facebook [@awaludin.ubadah](https://www.facebook.com/awaludin.ubadah)
+- Github [@awaludin-dev](https://www.github.com/awaludin-dev)
 
 
 ## Feedback

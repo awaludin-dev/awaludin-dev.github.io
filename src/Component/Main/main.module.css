@@ -17,3 +17,13 @@
     background-color: rgba(240, 240, 240, 0.8);
     color: unset;
 }
+.logoArea {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.logo {
+    margin: 0 14px;
+    color: #fff;
+    font-size: 40px;
+}

@@ -1,16 +1,16 @@
 .container {
-    text-align: center;
+  text-align: center;
 }
 .outlineImg {
-    padding-top: 24px;
+  padding-top: 24px;
 }
 .imgStyles {
-    width: 200px;
-    border-radius: 50%;
+  width: 200px;
+  border-radius: 50%;
 }
 .textDisplay {
-    color: #fff;
+  color: #fff;
 }
 .textDisplay h4 {
-    font-weight: lighter;
+  font-weight: lighter;
 }

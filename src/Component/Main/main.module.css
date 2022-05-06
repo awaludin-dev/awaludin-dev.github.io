@@ -27,3 +27,8 @@
     color: #fff;
     font-size: 40px;
 }
+@media(max-width: 670px) {
+	.logo {
+		font-size: 30px;
+	}
+}

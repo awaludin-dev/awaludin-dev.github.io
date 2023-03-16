@@ -340,7 +340,10 @@ https://www.tooplate.com/view/2115-marvel
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-          .then(res => alert('Data sudah dikirim!'))
+          .then(res => {
+            alert('Data sudah dikirim!')
+            form.reset()
+          })
           .catch(err => alert(err))
       })
     </script> 

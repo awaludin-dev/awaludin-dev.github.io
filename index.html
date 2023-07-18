@@ -17,6 +17,7 @@
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="alert/style.css">
     
 <!--
 
@@ -325,6 +326,18 @@ https://www.tooplate.com/view/2115-marvel
           </div>
      </footer>
 
+     <!-- ALERT -->
+
+     <div id="popup1" class="overlay">
+      <div class="popup">
+        <h3>Data was send</h3>
+        <a class="close" href="./">&times;</a>
+        <div class="content">
+          Thanks for filling this form.
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -343,7 +356,7 @@ https://www.tooplate.com/view/2115-marvel
         e.preventDefault()
         fetch(scriptURL, {method: 'POST', body: new FormData(form)})
           .then(res => {
-            alert('Data sudah dikirim!')
+            window.location.href = '#popup1'
             form.reset()
           })
           .catch(err => alert(err))

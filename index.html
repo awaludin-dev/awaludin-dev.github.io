@@ -349,17 +349,21 @@ https://www.tooplate.com/view/2115-marvel
 
     <!-- Mengirim form ke spreadsheet -->
     <script>
+      let send = 0
       const scriptURL = 'https://script.google.com/macros/s/AKfycby7VxgI5u9P2vOYjGeCN10x11hFHYgRIuDycwjA1799bbg6EPmNeV4ilodFyLZh58Q/exec'
       const form = document.forms['submit-to-spreadsheet']
 
       form.addEventListener('submit', e => {
         e.preventDefault()
-        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-          .then(res => {
-            window.location.href = '#popup1'
-            form.reset()
-          })
-          .catch(err => alert(err))
+        if(send === 0) {
+          send = 1
+          fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+            .then(res => {
+              window.location.href = '#popup1'
+              form.reset()
+            })
+            .catch(err => alert(err))
+        }
       })
     </script> 
 

@@ -6,10 +6,12 @@
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
+  }
+  #popup1.hide {
     visibility: hidden;
     opacity: 0;
   }
-  .overlay:target {
+  #popup1.show {
     visibility: visible;
     opacity: 1;
   }
@@ -45,6 +47,9 @@
   .popup .content {
     max-height: 30%;
     overflow: auto;
+  }
+  .close {
+    cursor: pointer;
   }
   
   @media screen and (max-width: 700px){

@@ -328,10 +328,10 @@ https://www.tooplate.com/view/2115-marvel
 
      <!-- ALERT -->
 
-     <div id="popup1" class="overlay">
+     <div id="popup1" class="overlay hide">
       <div class="popup">
         <h3>Data was send</h3>
-        <a class="close" href="./">&times;</a>
+        <a class="close" id="closePopup">&times;</a>
         <div class="content">
           Thanks for filling this form.
         </div>
@@ -349,22 +349,26 @@ https://www.tooplate.com/view/2115-marvel
 
     <!-- Mengirim form ke spreadsheet -->
     <script>
-      let send = 0
       const scriptURL = 'https://script.google.com/macros/s/AKfycby7VxgI5u9P2vOYjGeCN10x11hFHYgRIuDycwjA1799bbg6EPmNeV4ilodFyLZh58Q/exec'
       const form = document.forms['submit-to-spreadsheet']
 
       form.addEventListener('submit', e => {
         e.preventDefault()
-        if(send === 0) {
-          send = 1
-          fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-            .then(res => {
-              window.location.href = '#popup1'
-              form.reset()
-            })
-            .catch(err => alert(err))
-        }
+        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+          .then(res => {
+            popup1.classList.add('show');
+            popup1.classList.remove('hide');
+            form.reset()
+          })
+          .catch(err => alert(err))
       })
+
+      closePopup.onclick = function() {
+        popup1.classList.add('hide');
+        popup1.classList.remove('show');
+        history.replaceState(null, null, window.location.pathname);
+      }
+
     </script> 
 
   </body>
